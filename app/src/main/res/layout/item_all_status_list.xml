@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/_2dip"
+        android:elevation="@dimen/_5dip"
+        android:background="@drawable/btn_round_shape"
+        android:backgroundTint="@color/white"
+        android:padding="@dimen/_4dip">
+
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="fetch..."
+            android:layout_weight="1"
+            android:paddingHorizontal="@dimen/_12sp"
+          android:paddingVertical="@dimen/_8dip"
+            android:layout_gravity="center"
+            android:fontFamily="@font/roboto_regular"
+            android:textSize="@dimen/_14sp"
+            android:layout_marginStart="@dimen/_5dip"
+            android:textColor="@color/black" />
+        <ImageView
+            android:id="@+id/ivChecked"
+            android:layout_width="@dimen/_24dip"
+            android:layout_height="@dimen/_24dip"
+            android:layout_marginStart="5dp"
+            android:padding="@dimen/_2dip"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/_10dp"
+            android:layout_marginEnd="@dimen/_10dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_checked" />
+
+    </LinearLayout>
+</layout>

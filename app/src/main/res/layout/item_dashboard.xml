@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingVertical="@dimen/_10dp"
+        android:elevation="@dimen/_6dp"
+        android:layout_margin="@dimen/_4dip"
+        app:cardCornerRadius="@dimen/_6dp"
+>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_4dip"
+    android:layout_marginStart="@dimen/_5dip"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Leads"
+        android:layout_gravity="center"
+        android:fontFamily="@font/roboto_bold"
+        android:paddingVertical="@dimen/_6dp"
+        android:textSize="@dimen/_14sp"
+        android:layout_marginStart="@dimen/_5dip"
+        android:textColor="@color/text_color" />
+
+    <TextView
+        android:id="@+id/tvSubTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" | This Month"
+        android:visibility="gone"
+        android:layout_toRightOf="@+id/tvTitle"
+        android:layout_gravity="center"
+        android:fontFamily="@font/roboto_regular"
+        android:paddingVertical="@dimen/_6dp"
+        android:textSize="@dimen/_12sp"
+        android:layout_marginTop="2dp"
+        android:layout_marginStart="@dimen/_5dip" />
+
+    <ImageView
+        android:id="@+id/ivImage"
+        android:layout_width="@dimen/_40dip"
+        android:layout_height="@dimen/_40dip"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/_5dip"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/tvTitle"
+        android:layout_marginBottom="@dimen/_5dip"
+        android:src="@drawable/ic_dashbord" />
+
+    <TextView
+        android:id="@+id/tvAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTitle"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/_5dip"
+        android:gravity="center"
+        android:layout_marginStart="@dimen/_20dip"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/ivImage"
+        android:fontFamily="@font/roboto_bold"
+        android:paddingVertical="@dimen/_6dp"
+        android:text="0"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_18sp" />
+</RelativeLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+</layout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+      <!--  lead id, source, plumber, architect, client, lead date-->
+    </data>
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/_5dip"
+    app:cardElevation="@dimen/_5dip"
+    android:layout_margin="@dimen/_4dip">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="@dimen/_5dip"
+        android:padding="@dimen/_4dip">
+        <ImageView
+            android:id="@+id/ivUpdate"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_baseline_edit_note_24"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_5dip" />
+        <TextView
+            android:id="@+id/tvID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_below="@+id/ivUpdate"
+            android:layout_marginTop="@dimen/_4dip"
+            android:layout_gravity="center"
+            android:fontFamily="@font/roboto_regular"
+            android:textSize="@dimen/_14sp"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/tvSource"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sweets"
+            android:layout_below="@+id/ivUpdate"
+            android:layout_marginTop="@dimen/_4dip"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center"
+            android:fontFamily="@font/roboto_regular"
+            android:textSize="@dimen/_14sp"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/tvPlumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/_4dip"
+            android:layout_below="@+id/tvID"
+            android:layout_gravity="center"
+            android:fontFamily="@font/roboto_regular"
+            android:textSize="@dimen/_14sp"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/tvArchitect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sweets"
+            android:layout_below="@+id/tvSource"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center"
+            android:fontFamily="@font/roboto_regular"
+            android:textSize="@dimen/_14sp"
+            android:layout_marginTop="@dimen/_4dip"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/tvClient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_below="@+id/tvPlumber"
+            android:layout_gravity="center"
+            android:fontFamily="@font/roboto_regular"
+            android:textSize="@dimen/_14sp"
+            android:layout_marginTop="@dimen/_4dip"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/tvLeadDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sweets"
+            android:layout_below="@+id/tvArchitect"
+            android:layout_gravity="center"
+            android:fontFamily="@font/roboto_regular"
+            android:textSize="@dimen/_14sp"
+            android:layout_marginTop="@dimen/_4dip"
+            android:textColor="@color/black" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
+
+</layout>

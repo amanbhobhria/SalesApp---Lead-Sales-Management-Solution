@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "30774031962",
+    "project_id": "atul-sales",
+    "storage_bucket": "atul-sales.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:30774031962:android:07e40bfb871f42199e8a63",
+        "android_client_info": {
+          "package_name": "com.data.salesapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmxpeXaQpEgq36ue5SQSTAltLF33KNaJM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

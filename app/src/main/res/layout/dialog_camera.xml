@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="6dp"
+        android:background="@drawable/topround">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose Photo Type"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:textSize="18sp"
+            android:padding="6dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/ivClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="end"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginBottom="6dp"
+            android:background="@drawable/cirle_shape"
+            android:backgroundTint="@color/white"
+            android:padding="2dp"
+            android:src="@drawable/quantum_ic_clear_grey600_24"
+            android:tint="@color/black"/>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/_5dip"
+        android:layout_marginBottom="@dimen/_10dp"
+        android:padding="@dimen/_6dp"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:id="@+id/llInternalPhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/btn_round_shape"
+            android:backgroundTint="@color/white"
+            android:layout_gravity="center"
+            android:elevation="@dimen/_5dip"
+            android:layout_margin="@dimen/_4dip"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="@dimen/_30dip"
+                android:layout_height="30dp"
+                android:layout_marginTop="@dimen/_5dip"
+                android:src="@drawable/baseline_call_to_action_24"
+                android:tint="@color/colorPrimary"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Photo"
+                android:textColor="@color/black"
+                android:layout_marginTop="@dimen/_4dip"
+                android:layout_marginBottom="@dimen/_10dp"
+                android:textSize="@dimen/_16sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/llClickPhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="5dp"
+            android:elevation="@dimen/_5dip"
+            android:layout_margin="@dimen/_4dip"
+            android:background="@drawable/btn_round_shape"
+            android:backgroundTint="@color/white"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="@dimen/_30dip"
+                android:layout_height="@dimen/_30dip"
+                android:layout_marginTop="@dimen/_5dip"
+                android:src="@drawable/ic_menu_camera"
+                android:tint="@color/colorPrimary"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Open  Camera"
+                android:textSize="@dimen/_16sp"
+                android:layout_marginTop="@dimen/_4dip"
+                android:textColor="@color/black"
+                android:layout_marginBottom="@dimen/_10dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

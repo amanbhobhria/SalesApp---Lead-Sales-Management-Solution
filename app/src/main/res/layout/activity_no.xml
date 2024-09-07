@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/container"
+        android:orientation="vertical"
+        tools:context=".activity.NoInternetActivity">
+
+        <RelativeLayout
+            android:id="@+id/cancellyt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:background="@color/colorPrimaryDark">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:fontFamily="@font/roboto_regular"
+                android:text="Internet Issue"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_16sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <!--    <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/blanklayoutanimation"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dip"
+                    android:visibility="gone"
+                    android:layout_gravity="center"
+                    app:lottie_autoPlay="true"
+                    app:lottie_fileName="network_error.json"
+                    app:lottie_loop="true"/>
+        -->
+
+            <TextView
+                android:id="@+id/errormessage"
+                android:paddingLeft="@dimen/_10dp"
+                android:paddingRight="@dimen/_10dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/_16sp"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:fontFamily="@font/roboto_regular"
+                android:text="@string/internetdisconnect"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="120dip"
+                android:layout_marginTop="20dip"
+                android:text="Try Again"
+                android:textAllCaps="true"
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="@color/colorAccent"
+                android:background="@color/transperent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

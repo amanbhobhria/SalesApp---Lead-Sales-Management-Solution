@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!--    <data>
+            <variable
+                name="loginViewModel"
+                type="com.example.salesapp.viewmodelactivity.LoginViewModel" />
+        </data>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".Activity.LoginActivity">
+
+        <include
+            android:id="@+id/igToolbar"
+            layout="@layout/toolbar" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginVertical="@dimen/_20dip"
+                    android:src="@drawable/sales_person"
+                    android:visibility="gone" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="30dp"
+                    android:hint="Select Source">
+
+
+                    <AutoCompleteTextView
+                        android:id="@+id/stateSource"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="none" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:visibility="gone"
+                    android:layout_marginTop="10dp"
+                    android:hint="Select Installer">
+
+
+                    <AutoCompleteTextView
+                        android:id="@+id/stateInstaller"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="none" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="10dp"
+                    android:hint="Select Architect">
+
+
+                    <AutoCompleteTextView
+                        android:id="@+id/stateArchitect"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="none" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <CheckBox
+                    android:id="@+id/dealerCheck"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_10dp"
+                    android:background="@color/light_grays"
+                    android:layout_marginTop="@dimen/_5dip"
+                    android:text="Dealer Lead" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="10dp"
+                    android:hint="Select Dealer">
+
+
+                    <AutoCompleteTextView
+                        android:id="@+id/stateDealer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="none" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <RadioGroup
+                    android:id="@+id/radioGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/black_border"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="@dimen/_10dp">
+
+                    <RadioButton
+                        android:id="@+id/rbCommercial"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="Commercial" />
+
+                    <RadioButton
+                        android:id="@+id/rbResidential"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10dp"
+                        android:text="Residential" />
+                    <RadioButton
+                        android:id="@+id/rbOthers"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10dp"
+                        android:text="Others" />
+
+                </RadioGroup>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="10dp"
+                    android:hint="Select Type"
+                    android:visibility="gone">
+
+
+                    <AutoCompleteTextView
+                        android:id="@+id/stateType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="none" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="10dp"
+                    android:hint="Select Category">
+
+
+                    <AutoCompleteTextView
+                        android:id="@+id/stateCategory"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="none" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="10dp"
+                    android:hint="Select Sub Category">
+
+
+                    <AutoCompleteTextView
+                        android:id="@+id/stateSubCategory"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="none" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="10dp"
+                    android:hint="Select Property Stage">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/statePropertyStage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="none" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="10dp"
+                    android:hint="Select Client">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/stateClient"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="none" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="10dp"
+                    android:hint="Select State">
+
+
+                    <AutoCompleteTextView
+                        android:id="@+id/stateselector"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="none" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="10dp"
+                    android:hint="Select City">
+
+
+                    <AutoCompleteTextView
+                        android:id="@+id/cityselector"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="none" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_10dp"
+                    android:layout_marginTop="@dimen/_10dp"
+                    android:hint="Enter GST Number">
+
+                    <!--this is the actual edit text which takes the input-->
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editGSTNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_10dp"
+                    android:layout_marginTop="10dp"
+                    android:hint="Enter Remark">
+
+                    <!--this is the actual edit text which takes the input-->
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editRemark"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!--     android:text="@={loginViewModel.mobileNo}"-->
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:visibility="gone"
+               android:orientation="vertical">
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:layout_marginStart="10dp"
+                   android:layout_marginTop="10dp"
+                   android:background="@color/color_ice_cream"
+                   android:fontFamily="@font/roboto_regular"
+                   android:padding="15dp"
+                   android:text="Add Multiple Product"
+                   android:textColor="@color/black"
+                   android:textSize="14sp" />
+
+
+               <com.google.android.material.textfield.TextInputLayout
+                   style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginHorizontal="10dp"
+                   android:layout_marginTop="10dp"
+                   android:hint="Select Product Category">
+
+
+                   <AutoCompleteTextView
+                       android:id="@+id/stateProductCategory"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:inputType="none" />
+
+               </com.google.android.material.textfield.TextInputLayout>
+
+               <com.google.android.material.textfield.TextInputLayout
+                   style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginHorizontal="10dp"
+                   android:layout_marginTop="10dp"
+                   android:hint="Select Product Sub Category">
+
+
+                   <AutoCompleteTextView
+                       android:id="@+id/productSubCategory"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:inputType="none" />
+
+               </com.google.android.material.textfield.TextInputLayout>
+
+               <com.google.android.material.textfield.TextInputLayout
+                   style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginHorizontal="10dp"
+                   android:layout_marginTop="10dp"
+                   android:hint="Select Product">
+
+
+                   <AutoCompleteTextView
+                       android:id="@+id/stateProduct"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:inputType="none" />
+
+               </com.google.android.material.textfield.TextInputLayout>
+
+               <com.google.android.material.textfield.TextInputLayout
+                   style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginHorizontal="@dimen/_10dp"
+                   android:layout_marginTop="10dp"
+                   android:hint="Enter Qty">
+
+                   <!--this is the actual edit text which takes the input-->
+                   <com.google.android.material.textfield.TextInputEditText
+                       android:id="@+id/editQty"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:inputType="number" />
+
+               </com.google.android.material.textfield.TextInputLayout>
+
+               <androidx.recyclerview.widget.RecyclerView
+                   android:id="@+id/rcAllProduct"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="5dp"
+                   app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                   tools:itemCount="4"
+                   tools:listitem="@layout/item_dataproduct_list" />
+
+               <TextView
+                   android:id="@+id/btnAddProduct"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:background="@drawable/btn_round_shape"
+                   android:fontFamily="@font/roboto_bold"
+                   android:gravity="center"
+                   android:padding="15dp"
+                   android:visibility="gone"
+                   android:text="Add Product"
+                   android:layout_marginTop="@dimen/_5dip"
+                   android:textColor="@color/white"
+                   android:textSize="16sp" />
+               <!-- android:onClick="@{()->loginViewModel.submit()}"-->
+
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:layout_marginStart="10dp"
+                   android:layout_marginTop="5dp"
+                   android:background="@color/color_ice_cream"
+                   android:fontFamily="@font/roboto_regular"
+                   android:padding="15dp"
+                   android:text="Add Custom Product"
+                   android:textColor="@color/black"
+                   android:textSize="14sp" />
+
+
+               <com.google.android.material.textfield.TextInputLayout
+                   style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginHorizontal="10dp"
+                   android:layout_marginTop="10dp"
+                   android:hint="Select Custom Product Category">
+
+
+                   <AutoCompleteTextView
+                       android:id="@+id/stateCustProdCat"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:inputType="none" />
+
+               </com.google.android.material.textfield.TextInputLayout>
+
+               <com.google.android.material.textfield.TextInputLayout
+                   style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginHorizontal="10dp"
+                   android:layout_marginTop="10dp"
+                   android:hint="Select Custom Sub Category">
+
+
+                   <AutoCompleteTextView
+                       android:id="@+id/CustSubCatProduct"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:inputType="none" />
+
+               </com.google.android.material.textfield.TextInputLayout>
+
+               <com.google.android.material.textfield.TextInputLayout
+                   style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginHorizontal="@dimen/_10dp"
+                   android:layout_marginTop="10dp"
+                   android:hint="Enter Custom Product Name">
+
+                   <!--this is the actual edit text which takes the input-->
+                   <com.google.android.material.textfield.TextInputEditText
+                       android:id="@+id/editCustmProdName"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content" />
+
+               </com.google.android.material.textfield.TextInputLayout>
+
+               <com.google.android.material.textfield.TextInputLayout
+                   style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginHorizontal="@dimen/_10dp"
+                   android:layout_marginTop="10dp"
+                   android:hint="Enter Qty">
+
+                   <!--this is the actual edit text which takes the input-->
+                   <com.google.android.material.textfield.TextInputEditText
+                       android:id="@+id/editCustmQty"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:inputType="number" />
+
+               </com.google.android.material.textfield.TextInputLayout>
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginHorizontal="@dimen/_6dp"
+                   android:layout_marginTop="5dp"
+                   android:background="@drawable/border"
+                   android:orientation="vertical"
+                   android:padding="10dp">
+
+                   <TextView
+                       android:id="@+id/tvtitle"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:padding="5dp"
+                       android:text="Upload Picture"
+                       android:textColor="@color/black"
+                       android:textSize="14sp"
+                       android:textStyle="bold" />
+
+                   <ImageView
+                       android:id="@+id/ivAadharFront"
+                       android:layout_width="40dp"
+                       android:layout_height="40dp"
+                       android:layout_below="@+id/tvtitle"
+                       android:layout_alignParentEnd="true"
+                       android:layout_gravity="center"
+                       android:layout_marginTop="@dimen/_30dip"
+                       android:layout_marginEnd="@dimen/_10dp"
+                       android:src="@drawable/icon_uploadfile"
+                       android:visibility="gone" />
+
+
+                   <ImageView
+                       android:id="@+id/btnAadharFront"
+                       android:layout_width="@dimen/_100dip"
+                       android:layout_height="@dimen/_100dip"
+                       android:layout_below="@+id/tvtitle"
+                       android:layout_centerHorizontal="true"
+                       android:layout_gravity="center"
+                       android:layout_marginStart="20dp"
+                       android:layout_marginTop="10dp"
+                       android:layout_marginEnd="20dp"
+                       android:gravity="center"
+                       android:src="@drawable/add_file" />
+
+               </RelativeLayout>
+               <androidx.recyclerview.widget.RecyclerView
+                   android:id="@+id/rcAllCustmProduct"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="10dp"
+                   app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                   tools:itemCount="4"
+                   tools:listitem="@layout/item_dataproduct_list" />
+               <TextView
+                   android:id="@+id/btnAddCustProduct"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:layout_weight="1"
+                   android:background="@drawable/btn_round_shape"
+                   android:fontFamily="@font/roboto_bold"
+                   android:gravity="center"
+                   android:padding="15dp"
+                   android:text="Add Custom Product"
+                   android:textColor="@color/white"
+                   android:textSize="16sp" />
+
+           </LinearLayout>
+
+                <!-- android:onClick="@{()->loginViewModel.submit()}"-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+              android:layout_marginHorizontal="@dimen/_40dip"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+
+                    <TextView
+                        android:id="@+id/btnSubmit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/_5dip"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_round_shape"
+                        android:fontFamily="@font/roboto_bold"
+                        android:gravity="center"
+                        android:padding="15dp"
+                        android:text="Submit"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+
+</layout>

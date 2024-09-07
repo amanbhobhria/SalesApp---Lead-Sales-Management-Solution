@@ -24,18 +24,13 @@ public class ApiContants {
         const val dayStatus = "dayStatus"
 
 ///////////////////Testing URL////////////////////////////////////////
-//           const val BaseUrl="https://atulautomotive.online/sales-manager-api/"//Testing URL
-//           const val BaseUrl="https://sales.infinitynxt.com/sales-manager-api/"//Live URL
-           const val BaseUrl="https://crm.theglassguru.in//sales-manager-api/"//Live URL
+         const val BaseUrl="api/"//Testing URL
+
+          
            const val ImageBaseUrl = "https://www.art.antimatterfit.com/"//Testing URL
            const val ImageBaseUrlWhyChoose = "https://www.art.antimatterfit.com/public/images/"//Testing URL
            const val VideoBaseUrl = "https://www.art.antimatterfit.com/"//Testing URL
 
-/////////////////////////////////////Live URL////////////////////////
-   //     const val BaseUrl = "http://admin.antimatterfit.com/api/"//Live Url
-  //      const val ImageBaseUrl = "http://admin.antimatterfit.com/"//Live Url
-   //     const val ImageBaseUrlWhyChoose = "http://admin.antimatterfit.com/public/images/"
-   //     const val VideoBaseUrl = "http://admin.antimatterfit.com/"
 
         const val success = "success"
         const val failure = "failure"

@@ -30,8 +30,17 @@
 
 With **SalesApp**, businesses can manage their sales operations with increased efficiency, allowing managers to keep track of every lead and team member in real-time, while salespeople stay organized and focused on their targets.
 
-![Screenshot_2024-09-07-11-06-57-29_d26e59178c590d96aec19e11534efa27](https://github.com/user-attachments/assets/faf70228-afe9-4102-8f09-911d69c5e8e9)
-![Screenshot_2024-09-07-11-06-50-65_d26e59178c590d96aec19e11534efa27](https://github.com/user-attachments/assets/65d5f7e3-cc61-4200-a3cf-f5a9a21814fd)
-![Screenshot_2024-09-07-11-06-47-24_d26e59178c590d96aec19e11534efa27](https://github.com/user-attachments/assets/1d80a0be-4683-4562-a99b-97030e7d2c62)
-![Screenshot_2024-09-07-11-06-40-50_d26e59178c590d96aec19e11534efa27](https://github.com/user-attachments/assets/2a85494e-4955-46c8-b00c-5b215ab6c8cb)
-![Screenshot_2024-09-07-11-06-13-57_d26e59178c590d96aec19e11534efa27](https://github.com/user-attachments/assets/b14a6f04-c62f-44dd-85f5-ad7f3d486be4)
+# Screenshots
+
+| Screenshot 1                                                                                                  | Screenshot 2                                                                                                  | Screenshot 3                                                                                                  |
+|---------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
+| ![Screenshot_2024-12-02-17-57-08-19_f27fba3842df0240dd9c0a3fb8da63a7](https://github.com/user-attachments/assets/617d5a9f-7526-40dd-99c2-a9472db6ba68) | ![Screenshot_2024-12-02-17-57-08-19_f27fba3842df0240dd9c0a3fb8da63a7](https://github.com/user-attachments/assets/518d6d73-38b4-4aec-9358-66744f6c7139) | ![Screenshot_2024-12-02-17-57-22-87_c31b32364ce19ca8fcd150a417ecce58](https://github.com/user-attachments/assets/145a0721-23af-461d-a5ad-85e2c640a81a) |
+
+| Screenshot 4                                                                                                  | Screenshot 5                                                                                                  | Screenshot 6                                                                                                  |
+|---------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
+| ![Screenshot_2024-09-07-11-06-57-29_d26e59178c590d96aec19e11534efa27](https://github.com/user-attachments/assets/faf70228-afe9-4102-8f09-911d69c5e8e9) | ![Screenshot_2024-09-07-11-06-50-65_d26e59178c590d96aec19e11534efa27](https://github.com/user-attachments/assets/65d5f7e3-cc61-4200-a3cf-f5a9a21814fd) | ![Screenshot_2024-09-07-11-06-47-24_d26e59178c590d96aec19e11534efa27](https://github.com/user-attachments/assets/1d80a0be-4683-4562-a99b-97030e7d2c62) |
+
+| Screenshot 7                                                                                                  | Screenshot 8                                                                                                  | Screenshot 9                                                                                                  |
+|---------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
+| ![Screenshot_2024-09-07-11-06-40-50_d26e59178c590d96aec19e11534efa27](https://github.com/user-attachments/assets/2a85494e-4955-46c8-b00c-5b215ab6c8cb) | ![Screenshot_2024-09-07-11-06-13-57_d26e59178c590d96aec19e11534efa27](https://github.com/user-attachments/assets/b14a6f04-c62f-44dd-85f5-ad7f3d486be4) |                                                                                                               |
+
